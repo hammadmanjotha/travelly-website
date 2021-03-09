@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar CSS */
+.header {
+  background-color: #131c27;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 10vh;
+  padding: 1rem;
+  align-items: center;
+  /* padding: 2rem 0; */
+}
+.logo {
+  font-size: 1.5rem;
+  flex: 1 1 40rem;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  flex: 3 1 40rem;
+  justify-content: center;
+  align-items: center;
+}
+.main-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+}
+.links a {
+  padding: 0 1rem;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* Hero CSS */
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(0,212,255,0.0032387955182072714) 0%, rgba(0,0,0,0.5014180672268907) 0%),url(/asserts/landing-page.jpg);
+  background-size: cover;
+  background-position: center;
+  /* object-fit: cover; */
+  height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3{
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+.hero h2{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.hero button{
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  background: #4c6e97;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: 0.5s ease-in;
+}
+
+.hero button:hover{
+  background-color: #27384d;
+}
+
+@media screen and (max-width: 558px){
+  .main-header{
+    flex-wrap: wrap;
+  }
+  .logo{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  nav{
+    align-items: center;
+  }
+  .cloud{
+    height: 30rem;
+  }
+}
+/* Location Section */
+
+#location {
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(0,212,255,0.0032387955182072714) 0%, rgba(0,0,0,0.3) 0%),url(/asserts/new-york-page.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-head{
+  width: 80%;
+  margin: auto;
+}
+
+.location-head h2{
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+.location-head h3{
+  font-size: 1.3rem;
+}
+
+.cloud{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  min-height: 30vh;
+  pointer-events: none;
+}
+.moving-cloud-1{
+  animation: cloudanimation infinite 4s ease-in-out alternate;
+}
+.moving-cloud-2{
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5%;
+  animation: cloudanimation infinite 3s ease-in-out alternate;
+}
+
+.location-head h3{
+  background-color: rgba(84, 89, 90, 0.8);
+  padding: 2rem;
+  max-width: 40vw;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 832px){
+  .location-head h3{
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .location-head h3{
+    max-width: 100vw;
+  }
+
+}
+
+@keyframes cloudanimation{
+  from{
+    transform: translate(10%,-10%);
+  }
+  to{
+    transform: translate(0%,0%);
+  }
+}
+
+@media screen and (max-width: 460px){
+  .links a{
+    padding: 0;
+    font-size: 1rem;
+  }
+  .moving-cloud-1{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 541px){
+  .hero h2{
+    font-size: 2rem;
+  }
+  .hero h3{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+.benifits{
+  background-color: #343C44;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+.benifits h1{
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.benifits p{
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 400px){
+  .benifits h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .benifits p{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+.main-cards{
+  margin: 4rem 0;
+  text-align: center;
+}
+.card{
+  margin: 2rem 1rem;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1),0px 10px 10px rgba(0,0,0,0.1);
+}
+.cards{
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+}
+.cards img{
+  width: 50px;
+  margin-bottom: 1rem;
+}
+.card-img{
+  background-color: #27394E;
+  padding: 1rem;
+}
+.card-body{
+  padding: 2rem;
+  min-height: 20vh;
+}
+
+.new-img{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body h4{
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 960px){
+  .cards{
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
+#contact{
+  height: 90vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.431) 0%, rgba(0,0,0,0.3) 0%),url(/asserts/contact-mountain.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wraper{
+  background: rgba(0, 0, 0, 0.883);
+  width: 60%;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.contact-heading{
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.form-contant{
+  padding: 1rem;
+}
+
+.submit{
+  width: 100%;
+  cursor: pointer;
+  background: #4c6e97;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: 0.5s ease-in;
+  padding: 1rem 0;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  outline: none;
+}
+
+.form-contant input{
+  padding: 1rem 1rem;
+  min-width: 50%;
+  outline: none;
+}
+
+.form-contant label{
+  font-size: 1.5rem;
+}
+
+.margin{
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 568px){
+  .form-wraper{
+    width: 100%;
+  }
+  .contact-heading h2{
+    font-size: 2rem;
+  }
+}
+
+footer{
+  background-color: #131C27;
+  color: white;
+}
+
+.footer-wraper{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+
+.footer-wraper ul{
+  display: flex;
+ list-style-type: none;
+ justify-content: space-between;
+}
+
+.footer-wraper li{
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 568px){
+  
+  .footer-wraper h2{
+    font-size: 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
