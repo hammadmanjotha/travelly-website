@@ -51,7 +51,7 @@ nav ul {
 /* Hero CSS */
 
 .hero {
-  background-image: linear-gradient(90deg, rgba(0,212,255,0.0032387955182072714) 0%, rgba(0,0,0,0.5014180672268907) 0%),url(/asserts/landing-page.jpg);
+  background-image: linear-gradient(90deg, rgba(0,212,255,0.0032387955182072714) 0%, rgba(0,0,0,0.5014180672268907) 0%),url(../asserts/landing-page.jpg);
   background-size: cover;
   background-position: center;
   /* object-fit: cover; */
@@ -105,7 +105,7 @@ nav ul {
 
 #location {
   min-height: 100vh;
-  background: linear-gradient(90deg, rgba(0,212,255,0.0032387955182072714) 0%, rgba(0,0,0,0.3) 0%),url(/asserts/new-york-page.png);
+  background: linear-gradient(90deg, rgba(0,212,255,0.0032387955182072714) 0%, rgba(0,0,0,0.3) 0%),url(../asserts/new-york-page.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -278,7 +278,7 @@ nav ul {
 
 #contact{
   height: 90vh;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.431) 0%, rgba(0,0,0,0.3) 0%),url(/asserts/contact-mountain.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.431) 0%, rgba(0,0,0,0.3) 0%),url(../asserts/contact-mountain.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
